@@ -1,0 +1,50 @@
+@import url('../../index.css');
+
+.container--home{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12,1fr);
+}
+.main-home--container{
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr;
+    overflow-y: auto;
+}
+.section-home--search{
+    grid-column: 1/-1;
+    display: flex;
+    height: max-content;
+    justify-content: center;
+    margin: 20px 0;
+}
+.home--search{
+    width: 50%;
+    padding: 10px 15px;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+.home--search:focus{
+    outline: 3px solid var(--color-principal);
+    border:0;
+}
+.section-home--pokemons{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    padding: 20px 0;
+}
+.home-pokemons--cardslist{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px;
+    column-gap:25px;
+}
